@@ -1,5 +1,3 @@
-/* font-family: 'Open Sans', sans-serif; */
-
 *{
     box-sizing: border-box;
 }
@@ -85,6 +83,7 @@ a{
 }
 
 .ba-info__title{
+    display: inline-block;
     font-size: 1.875rem;
     position: relative;
     text-transform: uppercase;
@@ -103,4 +102,89 @@ a{
 
 .ba-info__title span{
     position: relative;
+}
+
+.ba-info-block__fact{
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.ba-info__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    line-height: 2.14285;
+    letter-spacing: 0;
+}
+
+.ba-info__text p,
+.ba-info__text ul,
+.ba-info__text ol{
+    margin-top: 0;
+}
+
+.ba-section__header{
+    text-align: center;
+    margin-bottom: 5.25rem;
+}
+
+.ba-section{
+    padding-top: 130px;
+}
+
+/* ba-benefits section */
+
+.ba-benefit__title{
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.ba-benefit__icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #7beec7;
+    margin-right: 1.05em;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* ba-team member */
+
+.ba-team-member{
+    width: 100%;
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ba-team-memner__img{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.ba-team-member__info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: #7beec85c;
+    transform: translateY(-100%);
+    transition: transform .8s;
+}
+
+.ba-team-member:hover .ba-team-member__info{
+    transform: translateY(0);
 }
